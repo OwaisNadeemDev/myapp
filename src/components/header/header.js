@@ -1,14 +1,15 @@
 import React from "react";
 import logo from "../../assets/images/logo.PNG";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => (
   <div className="header sticky-top ">
     <header className="navbar  navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="index">
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <button
             className="navbar-toggler"
             type="button"

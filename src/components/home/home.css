@@ -2,6 +2,9 @@
     --main-theme-color: #00a87e;
     --main-font: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .card{
     width: 15rem;
     border: none;
