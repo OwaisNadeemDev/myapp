@@ -1,0 +1,93 @@
+import React from "react";
+import "./home.css";
+import image from "../../assets/images/demo.jpg";
+
+
+
+const Home = () => {
+
+  let Products = [
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'},
+    {productName: 'iPhone 11 Pro', productPrice: '500$', productLocation: 'New York, Ny'}
+   ];
+
+
+
+   
+   
+return ( <>
+  <div className="home">
+    <div className="row">
+    <div className="container">
+      {
+        Products.map( item=> {
+          return (
+            <div className="card">
+              <img src={image} alt="images" />
+              <div className="card-body">
+              <h5 className="card-title">{  item.productName }</h5>
+              <p className="card-text">
+            { item.productPrice }
+          </p>
+          <a href="i">
+           { item.productLocation }
+          </a>
+
+              </div>
+            </div>
+          );
+        })
+      }
+    
+    </div>
+    </div>
+  </div>
+  </>
+  );
+}
+
+Home.propTypes = {};
+
+Home.defaultProps = {};
+
+export default Home;

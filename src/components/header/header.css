@@ -1,0 +1,93 @@
+:root{
+    --main-theme-color: #00a87e;
+    --main-font: 'Roboto', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: max-content;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: #fff;
+    z-index: 1111;
+}
+.logo{
+    margin-left: 20px;
+}
+
+.search{
+    width: 33rem;
+    height: 55px;
+    padding-left: 17px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.735);
+}
+
+.search_btn{
+    background-color: var(--main-theme-color) !important;
+    color: #ffffff;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10000px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10000px;
+    padding: 8px 20px;
+    border: none;
+    margin-left: -72px;
+    font-size: 1.6rem;
+    
+}
+
+
+.location {
+    width: 11rem;
+    margin: 0 2rem;
+    color: var(--main-theme-color);
+
+}
+
+.location div .fas{
+    font-size: 1.5rem;
+}
+
+.menu{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px ;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    width: 100%;
+    font-weight: 400;
+}
+nav > li{
+    font-size: 1rem;
+    font-family: var(--main-font);
+    font-style: normal;
+    padding: 15px 13px;
+    position: relative;
+}
+
+nav li:hover li::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    background-color: var(--main-theme-color);
+    height: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 20px;
+    margin-left: -5px;
+ }
